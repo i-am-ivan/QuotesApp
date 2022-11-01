@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'newquote',
+    loadChildren: () => import('../newquote/newquote.module').then(mod => mod.NewquotePageModule)
   }
 ];
 
