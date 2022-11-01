@@ -12,8 +12,10 @@ export class HomePage {
 
   constructor(private router: Router) {}
 
-  newQuote() {
-    return this.router.navigateByUrl('/newquote');
-  }
+  editquote() { return this.router.navigateByUrl('/editquote'); }
+
+  newQuote() { return this.router.navigateByUrl('/newquote'); }
+
+  quoteDetail() { return this.router.navigateByUrl('/quotedetail'); }
 
 }

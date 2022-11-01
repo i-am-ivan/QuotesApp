@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'newquote',
     loadChildren: () => import('../newquote/newquote.module').then(mod => mod.NewquotePageModule)
+  },
+  {
+    path: 'editquote',
+    loadChildren: () => import('../editquote/editquote.module').then(mod => mod.EditquotePageModule)
+  },
+  {
+    path: 'quotedetail',
+    loadChildren: () => import('../quotedetail/quotedetail.module').then(mod => mod.QuotedetailPageModule)
   }
 ];
 

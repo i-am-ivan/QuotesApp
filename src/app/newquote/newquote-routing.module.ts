@@ -6,6 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: NewquotePage
+  },
+  {
+    path: 'editQuote',
+    loadChildren: () => import('../editquote/editquote.module').then(mod => mod.EditquotePageModule)
+  },
+  {
+    path: 'returnhome',
+    loadChildren: () => import('../home/home.module').then(mod => mod.HomePageModule)
   }
 ];
 

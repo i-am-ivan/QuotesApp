@@ -8,17 +8,15 @@
 </ion-header>
 
 <ion-content fullscreen class="ion-padding">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Quote Title</ion-card-title>
-      <ion-card-subtitle>Quote Subtitle</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      Here's a small text description for the quote content. Nothing more, nothing less.
-    </ion-card-content>
-
-    <ion-button fill="clear">Action 1</ion-button>
-    <ion-button fill="clear">Action 2</ion-button>
-  </ion-card>
+      <ion-card-subtitle>Quote Details</ion-card-subtitle>
+      <ion-item>
+        <ion-label position="stacked">Person</ion-label>
+        <ion-input [clearOnEdit]="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Quote Text</ion-label>
+        <ion-input [clearOnEdit]="true" ></ion-input>
+      </ion-item>
+    <ion-button ion-button (click)="editquote()"fill="outline" color="primary">Add</ion-button>
+    <ion-button ion-button (click)="quoteDetail()" fill="outline" color="danger">Cancel</ion-button>
 </ion-content>

@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>editquote</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Quote</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content fullscreen class="ion-padding">
+      <ion-card-subtitle>Quote Details</ion-card-subtitle>
+      <ion-item>
+        <ion-label position="stacked">Person</ion-label>
+        <ion-input [clearOnEdit]="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Quote Text</ion-label>
+        <ion-input [clearOnEdit]="true" ></ion-input>
+      </ion-item>
+    <ion-button  fill="outline" color="primary">Update</ion-button>
+    <ion-button ion-button (click)="returnhome()" fill="outline" color="danger">Cancel</ion-button>
 </ion-content>

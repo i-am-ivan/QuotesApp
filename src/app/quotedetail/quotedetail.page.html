@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>quotedetail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Quote Details</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Theodore Roosevelt</ion-card-title>
+      <ion-card-subtitle>Quote Subtitle</ion-card-subtitle>
+    </ion-card-header>
 
+    <ion-card-content>
+      <ion-item>
+        <ion-text>
+          <p>Believe you can and you're halfway there.</p>
+        </ion-text>
+      </ion-item>
+      <ion-button>Default</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -6,10 +6,12 @@ import { Router } from '@angular/router';
   templateUrl: './newquote.page.html',
   styleUrls: ['./newquote.page.scss'],
 })
-export class NewquotePage implements OnInit {
+export class NewquotePage {
 
   constructor(private router: Router) { }
 
-  ngOnInit() { return this.router.navigateByUrl('/'); }
+  editquote() { return this.router.navigateByUrl('/editquote'); }
+
+  quoteDetail() { return this.router.navigateByUrl('/quotedetail'); }
 
 }

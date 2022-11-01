@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-editquote',
   templateUrl: './editquote.page.html',
   styleUrls: ['./editquote.page.scss'],
 })
-export class EditquotePage implements OnInit {
+export class EditquotePage {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
+  returnhome() { return this.router.navigateByUrl('/returnhome'); }
 
 }

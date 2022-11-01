@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quotedetail',
   templateUrl: './quotedetail.page.html',
   styleUrls: ['./quotedetail.page.scss'],
 })
-export class QuotedetailPage implements OnInit {
+export class QuotedetailPage {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
 
 }
