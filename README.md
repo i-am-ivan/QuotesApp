@@ -1,6 +1,6 @@
 # QuotesApp
 
-# Prerequisites ----------------------------------------------------------------------------------------------
+Prerequisites -----------------------------------------------------------------------------------------------------------------
 
 - Latest node version installed on the target machine. To verify run "node -v" in the terminal.
     - If not follow https://nodejs.org/en/download/ for your respective operating environment.
@@ -25,4 +25,4 @@
 
     - It will redirect to the default browser, from here inspect element and select the device type you want.
 
------------------------------------------------------ Enjoy --------------------------------------------------
+----------------------------------------------------- Enjoy --------------------------------------------------------------------
