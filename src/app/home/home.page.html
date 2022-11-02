@@ -15,10 +15,13 @@
   <ion-list>
 
     <ion-item-sliding>
-      <ion-item>
-        <ion-text>
-          <h6>1 Theodore Roosevelt</h6>
-          <p>Believe you can and you're halfway there.</p>
+
+      <ion-item detail>
+        <ion-text ion-button (click)="quoteDetail()">
+          <ion-label>
+            <h2>1 Theodore Roosevelt</h2>
+            <p>Believe you can and you're halfway there.</p>
+          </ion-label>
         </ion-text>
       </ion-item>
 
@@ -30,6 +33,30 @@
           <ion-icon slot="top" name="trash"></ion-icon>
         </ion-item-option>
       </ion-item-options>
+
     </ion-item-sliding>
+
+    <ion-item-sliding>
+
+      <ion-item detail>
+        <ion-text ion-button (click)="quoteDetail()">
+          <ion-label>
+            <h2>2 Theodore Roosevelt</h2>
+            <p>Believe you can and you're halfway there.</p>
+          </ion-label>
+        </ion-text>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option>
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="top" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
   </ion-list>
 </ion-content>

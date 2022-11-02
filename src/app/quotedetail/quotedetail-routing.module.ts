@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: QuotedetailPage
+  },
+  {
+    path: 'editQuote',
+    loadChildren: () => import('../editquote/editquote.module').then(mod => mod.EditquotePageModule)
   }
 ];
 

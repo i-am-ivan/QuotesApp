@@ -10,5 +10,6 @@ export class QuotedetailPage {
 
   constructor(private router: Router) { }
 
+  editquote() { return this.router.navigateByUrl('/editquote'); }
 
 }

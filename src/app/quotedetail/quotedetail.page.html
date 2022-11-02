@@ -11,16 +11,15 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title>Theodore Roosevelt</ion-card-title>
-      <ion-card-subtitle>Quote Subtitle</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
       <ion-item>
-        <ion-text>
-          <p>Believe you can and you're halfway there.</p>
-        </ion-text>
+        <ion-card-subtitle>Believe you can and you're halfway there.</ion-card-subtitle>
       </ion-item>
-      <ion-button>Default</ion-button>
+      <div style="text-align:center">
+        <ion-button ion-button (click)="editquote()">Edit</ion-button>
+      </div>
     </ion-card-content>
   </ion-card>
 </ion-content>
